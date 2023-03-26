@@ -1,0 +1,215 @@
+/* header */
+* {
+    box-sizing: border-box;
+}
+body {
+    /* background-color: rgb(92, 92, 169); */
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}  
+
+ /* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}   */
+
+.container {
+    width: 100%;
+    margin: 1em  auto 0 auto;
+}
+
+h1 {
+    margin: 1em auto;
+    color: #ffffff;
+    line-height: 1.5em;
+    font-size: 2rem;
+}
+
+h1, p {
+    margin-top: 0;
+    margin-bottom: 0.5 em;
+    text-align: center;
+}
+
+p {
+    font-style: italic;
+    font-size: 1.125rem;
+    font-weight: 200;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px 1px rgb(0,0,0, 0.4);
+}
+
+/* main */
+form {
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: rgb(33, 33, 52, 0.5);
+    padding: 1.5em; 
+    border-radius: 0.25em;
+}
+
+.form-control {
+    font-weight: 2.5em;
+    color: #495057;
+    background-color: #ffffff;
+    padding: 0.375em 0.75em;
+    display: block;
+    width: 100%;
+    border: solid 1px #ced4da;
+    border-radius: 0.25em;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+fieldset {
+    border: none;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+ 
+label {
+    
+    /* display: inline-flex;
+   
+    font-size: 1.25em; */
+
+    /* display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem; */
+    /* color: #ffffff;
+    margin: 0.5em 0;
+    display: inline-block; */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+
+    
+} 
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.inline {
+    /* vertical-align: middle;
+    font-size: 1.25em;
+    min-width: 1.25em;
+    min-height: 1.25em;
+    display: inline-block;
+    margin-right: 0.625rem; */
+
+    /* display: inline;
+    margin: 0 0 0 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem; */
+
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+/* input,select {
+    width: 100%;
+    margin: 10 0 0 0;
+    min-height: 2em;
+    padding: 0.375em 0.75em;
+} */
+
+input, button, select, textarea {
+    margin: 0 0 0.5em 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display: block;
+    width: 100%;
+}
+
+input[type="radio"] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+    width: inherit;
+}
+
+input[type="checkbox" ] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+    width: inherit;
+}
+
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 1.25rem;
+    color: #e4e4e4;
+       
+}
+
+.input-textarea {
+    width: 100%;
+    min-width: 120px;
+    padding: 1em;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 0.75em;
+    background-color: #37af65;
+    color: #ffffff;
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #2e9355;
+    color: #ffffff;
+}
+
+
+
